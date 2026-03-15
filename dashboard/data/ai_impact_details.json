@@ -1,0 +1,120 @@
+{
+  "baseline": {
+    "total_spend": 2862799.1299999985,
+    "total_sales": 28782224.789999988,
+    "total_orders": 257465,
+    "acos": 9.94641363163365,
+    "roas": 10.053875065275713,
+    "n_days": 60
+  },
+  "modules": {
+    "negation": {
+      "name": "否定词引擎",
+      "icon": "🚫",
+      "savings_at_100pct": 308729.0,
+      "n_candidates": 27448,
+      "n_green": 8533,
+      "n_yellow": 18915,
+      "green_spend": 212009.0,
+      "yellow_spend_adjusted": 96720.0,
+      "reason_breakdown": [
+        {
+          "negate_reason": "ASIN_ZERO_CONV",
+          "count": 5558,
+          "spend_saved": 21220.46,
+          "sales_at_risk": 0.0,
+          "net_savings": 21220.46
+        },
+        {
+          "negate_reason": "EXTREME_ACOS_100+",
+          "count": 277,
+          "spend_saved": 27100.68,
+          "sales_at_risk": 17362.15,
+          "net_savings": 26232.572500000002
+        },
+        {
+          "negate_reason": "HIGH_ACOS_50-100%",
+          "count": 644,
+          "spend_saved": 52906.3,
+          "sales_at_risk": 80314.89,
+          "net_savings": 48890.5555
+        },
+        {
+          "negate_reason": "ZERO_CONV_HIGH_CLICKS",
+          "count": 86,
+          "spend_saved": 346.34,
+          "sales_at_risk": 0.0,
+          "net_savings": 346.34
+        },
+        {
+          "negate_reason": "ZERO_CONV_HIGH_SPEND",
+          "count": 20883,
+          "spend_saved": 271635.91,
+          "sales_at_risk": 0.0,
+          "net_savings": 271635.91
+        }
+      ],
+      "why_better": [
+        "人工每天最多审核几百个搜索词，AI 同时分析 50 万条投放记录",
+        "人工依赖直觉判断\"这个词好不好\"，AI 用统计置信度判断（零转化 + 高花费 = 安全否定）",
+        "人工容易遗漏低频长尾词的浪费（每个花几毛钱，但累计惊人），AI 全量扫描无遗漏",
+        "人工否定词容易误伤（否掉有转化的词），AI 设置绿灯/黄灯安全等级保护"
+      ],
+      "methodology": "分析搜索词的花费、转化率、ACoS，识别零转化高花费词和极端高 ACoS 词"
+    },
+    "harvest": {
+      "name": "关键词收割",
+      "icon": "🌾",
+      "incremental_sales_at_100pct": 799883.0,
+      "acos_savings_at_100pct": 46391.0,
+      "n_candidates": 4558,
+      "n_new": 3206,
+      "n_existing": 1352,
+      "avg_acos": 9.6,
+      "why_better": [
+        "人工很难在几十万搜索词报告中发现\"已经在 Broad 匹配下跑出好成绩但还没建 Exact 匹配\"的词",
+        "AI 自动交叉比对广告组结构，秒级定位缺失的精确匹配投放",
+        "人工往往等到月底看报告才发现好词，AI 实时识别 → 抢占先机",
+        "Exact 匹配比 Broad 平均 CPC 低 15-25%，相同转化量下花更少的钱"
+      ],
+      "methodology": "识别在 Broad/Phrase 匹配下表现优秀（高 CVR、低 ACoS）但尚未建立 Exact 匹配的搜索词"
+    },
+    "bid_landscape": {
+      "name": "Bid 竞价优化",
+      "icon": "💰",
+      "savings_at_100pct": 312413.0,
+      "incremental_sales_at_100pct": 412285.0,
+      "n_decrease": 341302,
+      "n_increase": 31541,
+      "n_maintain": 126450,
+      "avg_overbid": 0.338,
+      "why_better": [
+        "人工调价通常是\"感觉这个词贵了就降一点\"，AI 基于 50 万条记录的统计模型找到最优出价区间",
+        "每个市场（国家×匹配类型）的最优出价不同，人工不可能逐一优化 28 个细分市场",
+        "AI 计算\"边际回报递减点\"—— 超过这个出价，多花的钱几乎不带来额外曝光",
+        "68% 的投放在\"过度出价\"，平均多花 $0.35/次点击 → AI 帮你把钱花在刀刃上"
+      ],
+      "methodology": "横截面分析 50 万投放记录的出价-表现关系，用 Isotonic Regression 拟合单调响应曲线"
+    },
+    "adtft": {
+      "name": "AdTFT 预测引擎",
+      "icon": "📈",
+      "incremental_sales_at_100pct": 1439111.0,
+      "roas_improvement_pct": 5.0,
+      "why_better": [
+        "人工根据\"昨天的数据\"做今天的决策（滞后性），AI 预测未来 1-7 天趋势（前瞻性）",
+        "预算在 ROAS 下降前转移到高效 campaign，而不是等亏了才调整",
+        "人工无法同时监控 15 万+ campaigns 的趋势变化，AI 全量实时预警",
+        "量化不确定性：AI 给出预测区间（P10-P90），帮你做风险可控的决策"
+      ],
+      "methodology": "Temporal Fusion Transformer 时序模型，融合多维特征预测 Spend/Sales/Orders/ACoS"
+    }
+  },
+  "combined_why_better": [
+    "🧠 全量分析：AI 同时处理 50 万投放、16 万关键词、8 个市场，人工不可能逐一覆盖",
+    "⚡ 实时响应：AI 秒级完成分析，人工需要数天甚至数周",
+    "📊 数据驱动：AI 基于统计显著性做决策，消除主观判断偏差",
+    "🔄 持续优化：AI 7×24 不间断运行，不存在\"忘了调\"或\"太忙没看\"",
+    "🎯 精准度：AI 同时考虑出价效率、关键词语义、时序趋势三个维度，人工通常只能顾一个"
+  ]
+}

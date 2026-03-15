@@ -1,0 +1,287 @@
+{
+  "manual": {
+    "n_campaigns": 156794,
+    "n_stores": 41,
+    "n_countries": 10,
+    "pct_with_spend": 28.2,
+    "avg_daily_spend": 2.04,
+    "median_daily_spend": 0.66,
+    "avg_active_days": 17.2,
+    "median_active_days": 10.0,
+    "total_spend": 2707275.42,
+    "total_sales": 27581499.94,
+    "total_orders": 246609,
+    "total_clicks": 5017002,
+    "total_impressions": 599374748,
+    "acos": 9.82,
+    "roas": 10.19,
+    "cpc": 0.54,
+    "ctr": 0.84,
+    "cvr": 4.92,
+    "bidding_strategy": {
+      "动态竞价-仅降低": 47.2,
+      "动态竞价-提高和降低": 10.7,
+      "固定竞价": 42.1,
+      "基于规则竞价": 0.0
+    },
+    "targeting_mix": {
+      "Auto": 29.3,
+      "Other": 20.3,
+      "Broad": 17.2,
+      "ASIN": 14.6,
+      "Phrase": 9.9,
+      "Exact": 8.2,
+      "Category": 0.5
+    },
+    "budget": {
+      "avg_budget": 5.42,
+      "median_budget": 6.0,
+      "utilization_mean": 46.2,
+      "pct_at_budget_cap": 25.2,
+      "tier_distribution": {
+        "$5-10": 57.9,
+        "$0-5": 34.1,
+        "$10-20": 6.7,
+        "$20-50": 1.1,
+        "$50+": 0.1
+      }
+    },
+    "acos_distribution": {
+      "p10": 3.0,
+      "p25": 6.1,
+      "median": 11.7,
+      "p75": 22.5,
+      "p90": 42.7,
+      "mean": 18.5,
+      "n_campaigns": 18313
+    },
+    "delivery_status": {
+      "投放中": 85.1,
+      "广告活动未完成": 7.1,
+      "超出预算": 3.6,
+      "已暂停": 2.3,
+      "付款失败": 1.6,
+      "--": 0.2,
+      "已结束": 0.0,
+      "已存档": 0.0
+    },
+    "halo": {
+      "promoted_pct": 79.0,
+      "halo_pct": 21.0
+    }
+  },
+  "ai1": {
+    "n_campaigns": 361,
+    "n_stores": 10,
+    "n_countries": 1,
+    "pct_with_spend": 75.9,
+    "avg_daily_spend": 8.61,
+    "median_daily_spend": 6.78,
+    "avg_active_days": 39.8,
+    "median_active_days": 47.0,
+    "total_spend": 111164.34,
+    "total_sales": 928080.36,
+    "total_orders": 8237,
+    "total_clicks": 151303,
+    "total_impressions": 22196653,
+    "acos": 11.98,
+    "roas": 8.35,
+    "cpc": 0.73,
+    "ctr": 0.68,
+    "cvr": 5.44,
+    "bidding_strategy": {
+      "动态竞价-仅降低": 11.9,
+      "动态竞价-提高和降低": 27.7,
+      "固定竞价": 60.4
+    },
+    "targeting_mix": {
+      "Other": 51.2,
+      "Auto": 31.1,
+      "Broad": 7.2,
+      "ASIN": 3.6,
+      "Phrase": 3.4,
+      "Exact": 3.4,
+      "Category": 0.0
+    },
+    "budget": {
+      "avg_budget": 11.12,
+      "median_budget": 9.6,
+      "utilization_mean": 68.6,
+      "pct_at_budget_cap": 43.2,
+      "tier_distribution": {
+        "$5-10": 46.5,
+        "$10-20": 30.5,
+        "$0-5": 15.8,
+        "$20-50": 6.4,
+        "$50+": 0.8
+      }
+    },
+    "acos_distribution": {
+      "p10": 6.7,
+      "p25": 9.6,
+      "median": 13.5,
+      "p75": 21.7,
+      "p90": 32.7,
+      "mean": 18.2,
+      "n_campaigns": 246
+    },
+    "delivery_status": {
+      "投放中": 96.0,
+      "超出预算": 3.7,
+      "已暂停": 0.3
+    },
+    "halo": {
+      "promoted_pct": 77.4,
+      "halo_pct": 22.6
+    },
+    "ai_target": {
+      "保持稳定": {
+        "n_campaigns": 246,
+        "pct": 68.1,
+        "acos": 11.86,
+        "roas": 8.43,
+        "cpc": 0.71,
+        "cvr": 5.08
+      },
+      "推动增长": {
+        "n_campaigns": 115,
+        "pct": 31.9,
+        "acos": 12.19,
+        "roas": 8.21,
+        "cpc": 0.78,
+        "cvr": 6.1
+      }
+    },
+    "store_concentration": [
+      {
+        "store": "Store-B10F",
+        "spend": 79729.56,
+        "pct": 71.7
+      },
+      {
+        "store": "Store-00BC",
+        "spend": 28544.65,
+        "pct": 25.7
+      },
+      {
+        "store": "Store-EDF7",
+        "spend": 2253.25,
+        "pct": 2.0
+      },
+      {
+        "store": "Store-941D",
+        "spend": 373.78,
+        "pct": 0.3
+      },
+      {
+        "store": "Store-5CFA",
+        "spend": 246.51,
+        "pct": 0.2
+      }
+    ]
+  },
+  "ai2": {
+    "new_acos": 7.02,
+    "new_roas": 14.24,
+    "total_savings": 667534.0,
+    "total_uplift": 2651279.0,
+    "profit_improvement": 3302167.0,
+    "estimated_cpc": 0.41,
+    "estimated_cvr": 5.17,
+    "modules": [
+      {
+        "key": "negation",
+        "name": "否定词引擎",
+        "icon": "🚫",
+        "savings": 308729,
+        "why_better": [
+          "人工每天最多审核几百个搜索词，AI 同时分析 50 万条投放记录",
+          "人工依赖直觉判断\"这个词好不好\"，AI 用统计置信度判断（零转化 + 高花费 = 安全否定）",
+          "人工容易遗漏低频长尾词的浪费（每个花几毛钱，但累计惊人），AI 全量扫描无遗漏"
+        ],
+        "uplift": 0
+      },
+      {
+        "key": "harvest",
+        "name": "关键词收割",
+        "icon": "🌾",
+        "savings": 0,
+        "why_better": [
+          "人工很难在几十万搜索词报告中发现\"已经在 Broad 匹配下跑出好成绩但还没建 Exact 匹配\"的词",
+          "AI 自动交叉比对广告组结构，秒级定位缺失的精确匹配投放",
+          "人工往往等到月底看报告才发现好词，AI 实时识别 → 抢占先机"
+        ],
+        "uplift": 799883
+      },
+      {
+        "key": "bid_landscape",
+        "name": "Bid 竞价优化",
+        "icon": "💰",
+        "savings": 312413,
+        "why_better": [
+          "人工调价通常是\"感觉这个词贵了就降一点\"，AI 基于 50 万条记录的统计模型找到最优出价区间",
+          "每个市场（国家×匹配类型）的最优出价不同，人工不可能逐一优化 28 个细分市场",
+          "AI 计算\"边际回报递减点\"—— 超过这个出价，多花的钱几乎不带来额外曝光"
+        ],
+        "uplift": 0
+      },
+      {
+        "key": "adtft",
+        "name": "AdTFT 预测引擎",
+        "icon": "📈",
+        "savings": 0,
+        "why_better": [
+          "人工根据\"昨天的数据\"做今天的决策（滞后性），AI 预测未来 1-7 天趋势（前瞻性）",
+          "预算在 ROAS 下降前转移到高效 campaign，而不是等亏了才调整",
+          "人工无法同时监控 15 万+ campaigns 的趋势变化，AI 全量实时预警"
+        ],
+        "uplift": 1439111
+      }
+    ],
+    "bidding_strategy": {
+      "ML优化出价": 100.0
+    },
+    "targeting_mix": {
+      "Auto": 25.0,
+      "Exact": 25.0,
+      "Broad": 15.0,
+      "ASIN": 15.0,
+      "Phrase": 10.0,
+      "Other": 10.0
+    }
+  },
+  "radar": {
+    "categories": [
+      "成本控制",
+      "投放效率",
+      "流量成本",
+      "转化能力",
+      "覆盖范围",
+      "预算利用"
+    ],
+    "manual": [
+      52,
+      52,
+      66,
+      48,
+      85,
+      46
+    ],
+    "ai1": [
+      30,
+      34,
+      39,
+      61,
+      96,
+      69
+    ],
+    "ai2": [
+      80,
+      92,
+      84,
+      54,
+      100,
+      85
+    ]
+  }
+}

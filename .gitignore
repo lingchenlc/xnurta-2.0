@@ -1,0 +1,51 @@
+# ===== Large Data Files (9GB+) =====
+data/raw/
+data/processed/
+data/features/
+
+# ===== Model Artifacts =====
+models/ad_tft/trained/*.pt
+models/bid_landscape/output/bid_recommendations.csv
+models/bid_landscape/output/bid_landscape_lgb.pkl
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+*.so
+
+# ===== Virtual Environment =====
+venv/
+.venv/
+env/
+
+# ===== IDE =====
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+
+# ===== Jupyter =====
+.ipynb_checkpoints/
+
+# ===== Streamlit =====
+.streamlit/credentials.toml
+.streamlit/secrets.toml
+
+# ===== Claude =====
+.claude/
+
+# ===== Misc =====
+*.log
+*.tmp
+nohup.out

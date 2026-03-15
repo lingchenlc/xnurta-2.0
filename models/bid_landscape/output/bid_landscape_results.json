@@ -1,0 +1,1223 @@
+{
+  "model_type": "cross_sectional_bid_landscape",
+  "data_source": "keywords.csv (500K targeting records, 90-day aggregated)",
+  "n_records": 499388,
+  "n_segments": 28,
+  "n_recommendations": 499293,
+  "curve_fitting": {
+    "impressions": {
+      "parametric": {
+        "function": "log",
+        "params": [
+          -30253473.911728784,
+          4.570982745651175e-06,
+          5429.096823619437
+        ],
+        "r2": 0.0957
+      },
+      "isotonic_r2": 0.0003,
+      "label": "Impressions"
+    },
+    "clicks": {
+      "parametric": {
+        "function": "log",
+        "params": [
+          -410376.0767777209,
+          2.1221183001661462e-06,
+          38.394812212566094
+        ],
+        "r2": 0.0996
+      },
+      "isotonic_r2": 0.0148,
+      "label": "Clicks"
+    },
+    "orders": {
+      "parametric": {
+        "function": "power",
+        "params": [
+          4.4526444328366834e-26,
+          18.71812290601279,
+          1.3155176405541673
+        ],
+        "r2": 0.6644
+      },
+      "label": "Orders"
+    },
+    "ctr": {
+      "parametric": {
+        "function": "saturation",
+        "params": [
+          0.025424900399061996,
+          0.02776568627967798,
+          0.4879683159980552
+        ],
+        "r2": 0.0165
+      },
+      "label": "CTR"
+    },
+    "cvr": {
+      "parametric": {
+        "function": "saturation",
+        "params": [
+          2817.124542040383,
+          91.41145937168866,
+          5.96996075471745
+        ],
+        "r2": 0.9692
+      },
+      "label": "CVR"
+    },
+    "conv_rate": {
+      "parametric": {
+        "function": "saturation",
+        "params": [
+          108.35680399514348,
+          2.103585918356417e-25,
+          -0.10270322103562247
+        ],
+        "r2": 0.0328
+      },
+      "label": "Conversion Rate"
+    }
+  },
+  "lgb_metrics": {
+    "log_impressions": {
+      "r2": 0.0822,
+      "mae": 1.4924,
+      "label": "Log Impressions"
+    },
+    "log_clicks": {
+      "r2": 0.0637,
+      "mae": 1.0804,
+      "label": "Log Clicks"
+    },
+    "has_orders": {
+      "r2": 0.0467,
+      "mae": 0.4205,
+      "label": "Has Orders (classification proxy)"
+    }
+  },
+  "global_curve": {
+    "bid": [
+      0.2977993456431656,
+      0.7811720204991202,
+      1.3750939206070139,
+      1.99349276974416,
+      2.578089691322073,
+      3.0881797410510283,
+      3.811686046511628,
+      4.402201834862385,
+      4.980023148148148,
+      5.482051282051282,
+      6.018480392156863,
+      6.603076923076923,
+      7.187034883720931,
+      7.986996996996997,
+      8.497650130548303,
+      8.969148936170212,
+      10.000034129692834,
+      10.919638554216869,
+      12.000443548387098,
+      12.497352941176471,
+      13.003658536585366,
+      25.004901960784313
+    ],
+    "impressions": [
+      4580.38740120859,
+      5943.060527633996,
+      5838.788655501065,
+      4578.919911012235,
+      3801.883517763541,
+      3305.5308453922316,
+      3167.3343023255816,
+      3835.146788990826,
+      6350.736111111111,
+      6963.4358974358975,
+      6109.073529411765,
+      3679.5384615384614,
+      2847.4476744186045,
+      3395.5585585585586,
+      4156.514360313316,
+      13285.553191489362,
+      3198.343003412969,
+      2823.843373493976,
+      4541.423387096775,
+      1691.8823529411766,
+      1915.8536585365853,
+      1652.2745098039215
+    ],
+    "clicks": [
+      36.060736329077535,
+      43.01540645028707,
+      38.939900064772836,
+      26.803485354097145,
+      25.845661036691904,
+      22.833968012185835,
+      20.600290697674417,
+      23.94495412844037,
+      42.89351851851852,
+      52.61538461538461,
+      47.705882352941174,
+      42.46153846153846,
+      17.58139534883721,
+      25.34234234234234,
+      29.07832898172324,
+      74.76595744680851,
+      24.477815699658702,
+      12.457831325301205,
+      44.149193548387096,
+      18.147058823529413,
+      30.78048780487805,
+      7.03921568627451
+    ],
+    "orders": [
+      1.6115038902902619,
+      2.8229317851959363,
+      3.0938743407050984,
+      2.3268446421950317,
+      2.89341875364007,
+      1.709063214013709,
+      0.75,
+      1.146788990825688,
+      0.49537037037037035,
+      2.8461538461538463,
+      0.8284313725490197,
+      1.4615384615384615,
+      0.22674418604651161,
+      2.1771771771771773,
+      0.391644908616188,
+      1.297872340425532,
+      0.2935153583617747,
+      0.08433734939759036,
+      0.5725806451612904,
+      0.20588235294117646,
+      0.3902439024390244,
+      7.882352941176471
+    ],
+    "ctr": [
+      0.02248968421852976,
+      0.018476889676589645,
+      0.0184965516658509,
+      0.0211823860120587,
+      0.024299026104337776,
+      0.019392809061953783,
+      0.02346470823241915,
+      0.021883110356714638,
+      0.024609712284637247,
+      0.013192462312965034,
+      0.023292850401925733,
+      0.01698355282388509,
+      0.02941306317588628,
+      0.02482236090401331,
+      0.048560947009840885,
+      0.014150558640193689,
+      0.0328584835842484,
+      0.031465197154971807,
+      0.02825369546754126,
+      0.03281989109320776,
+      0.020295007302134974,
+      0.0034498034431456413
+    ],
+    "cvr": [
+      0.040975726740125513,
+      0.05126955228102897,
+      0.06478322074815308,
+      0.07101656388257904,
+      0.08125320895360068,
+      0.050604899005913924,
+      0.03971351427298429,
+      0.04359203751990505,
+      0.020083449066760215,
+      0.082099706072009,
+      0.017745888485050126,
+      0.08000283588564955,
+      0.011402230880317527,
+      0.026717929943932187,
+      0.011075428330709378,
+      0.03108132930535546,
+      0.008779645034254034,
+      0.01381619273185538,
+      0.007506926460115422,
+      0.026307189542483657,
+      0.007365769300280296,
+      1.2266595789938994
+    ],
+    "cpc": [
+      0.34141418147906366,
+      0.7135085278466404,
+      1.3665749207405733,
+      1.962829091729342,
+      2.417575122007314,
+      2.5398592219528333,
+      2.225441171573971,
+      1.7317651989191438,
+      1.0622065080624328,
+      2.368546386635191,
+      0.7406202813592856,
+      2.2680060944288924,
+      0.3638802352935642,
+      0.3850491845927848,
+      0.39086137731912346,
+      0.7282922816992626,
+      0.3786434610183731,
+      0.494585350667494,
+      0.4723012138355884,
+      0.5178471870974829,
+      0.5623506915665918,
+      3.373447430323939
+    ],
+    "conv_rate": [
+      0.29955719485687154,
+      0.3708208638914934,
+      0.3933098917368372,
+      0.3661475713756025,
+      0.3972044263249854,
+      0.3008377760853008,
+      0.2238372093023256,
+      0.25688073394495414,
+      0.19907407407407407,
+      0.38461538461538464,
+      0.2107843137254902,
+      0.5,
+      0.10077519379844961,
+      0.10810810810810811,
+      0.1462140992167102,
+      0.2978723404255319,
+      0.09385665529010238,
+      0.060240963855421686,
+      0.17338709677419356,
+      0.14705882352941177,
+      0.17073170731707318,
+      0.7254901960784313
+    ],
+    "n_samples": [
+      309617,
+      155714,
+      21614,
+      5394,
+      1717,
+      1313,
+      688,
+      218,
+      432,
+      39,
+      204,
+      26,
+      516,
+      333,
+      383,
+      47,
+      586,
+      83,
+      248,
+      34,
+      41,
+      51
+    ]
+  },
+  "segment_summary": {
+    "AU_BROAD": {
+      "country": "AU",
+      "match_type": "BROAD",
+      "n_records": 1423,
+      "n_bins": 7,
+      "bid_range": [
+        0.2,
+        1.0
+      ],
+      "bid_median": 0.4,
+      "avg_impressions": 2161.655657062544,
+      "avg_orders": 1.0302178496134926,
+      "avg_ctr": 0.022520014992186244,
+      "avg_cvr": 0.04384243414587021
+    },
+    "AU_EXACT": {
+      "country": "AU",
+      "match_type": "EXACT",
+      "n_records": 2807,
+      "n_bins": 6,
+      "bid_range": [
+        0.4,
+        1.06
+      ],
+      "bid_median": 0.5,
+      "avg_impressions": 2218.1204132525827,
+      "avg_orders": 0.6840042750267189,
+      "avg_ctr": 0.022944503399041808,
+      "avg_cvr": 0.0432897404634749
+    },
+    "AU_PHRASE": {
+      "country": "AU",
+      "match_type": "PHRASE",
+      "n_records": 477,
+      "n_bins": 4,
+      "bid_range": [
+        0.39,
+        0.74
+      ],
+      "bid_median": 0.5,
+      "avg_impressions": 2628.188679245283,
+      "avg_orders": 0.8574423480083857,
+      "avg_ctr": 0.0198040796250517,
+      "avg_cvr": 0.0663266265616308
+    },
+    "CA_BROAD": {
+      "country": "CA",
+      "match_type": "BROAD",
+      "n_records": 28489,
+      "n_bins": 11,
+      "bid_range": [
+        0.05,
+        2.2
+      ],
+      "bid_median": 0.55,
+      "avg_impressions": 8907.328477658044,
+      "avg_orders": 1.8803397802660675,
+      "avg_ctr": 0.016124073743844027,
+      "avg_cvr": 0.04691099237573196
+    },
+    "CA_EXACT": {
+      "country": "CA",
+      "match_type": "EXACT",
+      "n_records": 40541,
+      "n_bins": 11,
+      "bid_range": [
+        0.14,
+        6.0
+      ],
+      "bid_median": 0.7,
+      "avg_impressions": 4481.368047162132,
+      "avg_orders": 1.5248020522434078,
+      "avg_ctr": 0.015979542565140826,
+      "avg_cvr": 0.0440995189275663
+    },
+    "CA_PHRASE": {
+      "country": "CA",
+      "match_type": "PHRASE",
+      "n_records": 14382,
+      "n_bins": 8,
+      "bid_range": [
+        0.12,
+        4.0
+      ],
+      "bid_median": 0.65,
+      "avg_impressions": 6259.030385203727,
+      "avg_orders": 1.6862745098039216,
+      "avg_ctr": 0.022743564899743794,
+      "avg_cvr": 0.04609025665388952
+    },
+    "DE_BROAD": {
+      "country": "DE",
+      "match_type": "BROAD",
+      "n_records": 22530,
+      "n_bins": 13,
+      "bid_range": [
+        0.02,
+        3.54
+      ],
+      "bid_median": 0.26,
+      "avg_impressions": 4721.879893475366,
+      "avg_orders": 1.5722148246782068,
+      "avg_ctr": 0.023516413512552802,
+      "avg_cvr": 0.038266762990815176
+    },
+    "DE_EXACT": {
+      "country": "DE",
+      "match_type": "EXACT",
+      "n_records": 14349,
+      "n_bins": 13,
+      "bid_range": [
+        0.04,
+        2.98
+      ],
+      "bid_median": 0.26,
+      "avg_impressions": 3426.11826608126,
+      "avg_orders": 1.0354728552512371,
+      "avg_ctr": 0.024798322151546988,
+      "avg_cvr": 0.034659637129646106
+    },
+    "DE_PHRASE": {
+      "country": "DE",
+      "match_type": "PHRASE",
+      "n_records": 13143,
+      "n_bins": 10,
+      "bid_range": [
+        0.02,
+        4.02
+      ],
+      "bid_median": 0.26,
+      "avg_impressions": 4161.899642395191,
+      "avg_orders": 1.437723503005402,
+      "avg_ctr": 0.030136196587424346,
+      "avg_cvr": 0.0398524475846733
+    },
+    "ES_BROAD": {
+      "country": "ES",
+      "match_type": "BROAD",
+      "n_records": 15142,
+      "n_bins": 10,
+      "bid_range": [
+        0.02,
+        2.55
+      ],
+      "bid_median": 0.21,
+      "avg_impressions": 3442.0530973451328,
+      "avg_orders": 0.5129441289129574,
+      "avg_ctr": 0.021008429109575868,
+      "avg_cvr": 0.02265061205072305
+    },
+    "ES_EXACT": {
+      "country": "ES",
+      "match_type": "EXACT",
+      "n_records": 9122,
+      "n_bins": 9,
+      "bid_range": [
+        0.02,
+        3.25
+      ],
+      "bid_median": 0.21,
+      "avg_impressions": 2721.0848498136374,
+      "avg_orders": 0.5268581451436088,
+      "avg_ctr": 0.019361956946399965,
+      "avg_cvr": 0.023608702484816526
+    },
+    "ES_PHRASE": {
+      "country": "ES",
+      "match_type": "PHRASE",
+      "n_records": 8244,
+      "n_bins": 7,
+      "bid_range": [
+        0.02,
+        1.58
+      ],
+      "bid_median": 0.21,
+      "avg_impressions": 3405.0237748665695,
+      "avg_orders": 0.8249636098981077,
+      "avg_ctr": 0.021374895473177356,
+      "avg_cvr": 0.025061538117003308
+    },
+    "FR_BROAD": {
+      "country": "FR",
+      "match_type": "BROAD",
+      "n_records": 20040,
+      "n_bins": 13,
+      "bid_range": [
+        0.03,
+        3.51
+      ],
+      "bid_median": 0.25,
+      "avg_impressions": 5297.319860279441,
+      "avg_orders": 1.5248502994011977,
+      "avg_ctr": 0.019650867949205824,
+      "avg_cvr": 0.037798617790060246
+    },
+    "FR_EXACT": {
+      "country": "FR",
+      "match_type": "EXACT",
+      "n_records": 12588,
+      "n_bins": 10,
+      "bid_range": [
+        0.02,
+        5.29
+      ],
+      "bid_median": 0.25,
+      "avg_impressions": 3001.2063075945343,
+      "avg_orders": 0.917302192564347,
+      "avg_ctr": 0.023032269279138578,
+      "avg_cvr": 0.03339574432877541
+    },
+    "FR_PHRASE": {
+      "country": "FR",
+      "match_type": "PHRASE",
+      "n_records": 10717,
+      "n_bins": 8,
+      "bid_range": [
+        0.03,
+        1.46
+      ],
+      "bid_median": 0.25,
+      "avg_impressions": 3878.5498740319117,
+      "avg_orders": 1.1070262200242604,
+      "avg_ctr": 0.025768984727992356,
+      "avg_cvr": 0.03819381489648825
+    },
+    "IT_BROAD": {
+      "country": "IT",
+      "match_type": "BROAD",
+      "n_records": 16027,
+      "n_bins": 11,
+      "bid_range": [
+        0.02,
+        2.08
+      ],
+      "bid_median": 0.21,
+      "avg_impressions": 4219.827291445686,
+      "avg_orders": 0.8924315218069507,
+      "avg_ctr": 0.020482841360280685,
+      "avg_cvr": 0.02558085102932933
+    },
+    "IT_EXACT": {
+      "country": "IT",
+      "match_type": "EXACT",
+      "n_records": 10252,
+      "n_bins": 9,
+      "bid_range": [
+        0.03,
+        3.21
+      ],
+      "bid_median": 0.21,
+      "avg_impressions": 3087.3527116660166,
+      "avg_orders": 0.6963519313304721,
+      "avg_ctr": 0.01806880210842008,
+      "avg_cvr": 0.023278484215482443
+    },
+    "IT_PHRASE": {
+      "country": "IT",
+      "match_type": "PHRASE",
+      "n_records": 9533,
+      "n_bins": 8,
+      "bid_range": [
+        0.03,
+        3.08
+      ],
+      "bid_median": 0.21,
+      "avg_impressions": 3991.874016574006,
+      "avg_orders": 1.0681842022448338,
+      "avg_ctr": 0.020068665277267063,
+      "avg_cvr": 0.02330963533243088
+    },
+    "MX_BROAD": {
+      "country": "MX",
+      "match_type": "BROAD",
+      "n_records": 255,
+      "n_bins": 3,
+      "bid_range": [
+        0.12,
+        8.77
+      ],
+      "bid_median": 4.0,
+      "avg_impressions": 4212.458823529411,
+      "avg_orders": 0.14901960784313725,
+      "avg_ctr": 0.015141743021114451,
+      "avg_cvr": 0.004817532675898113
+    },
+    "MX_EXACT": {
+      "country": "MX",
+      "match_type": "EXACT",
+      "n_records": 1677,
+      "n_bins": 11,
+      "bid_range": [
+        0.75,
+        15.0
+      ],
+      "bid_median": 8.0,
+      "avg_impressions": 2891.8831246273107,
+      "avg_orders": 0.2182468694096601,
+      "avg_ctr": 0.029014575579981987,
+      "avg_cvr": 0.008784331423140543
+    },
+    "MX_PHRASE": {
+      "country": "MX",
+      "match_type": "PHRASE",
+      "n_records": 1322,
+      "n_bins": 9,
+      "bid_range": [
+        0.75,
+        12.0
+      ],
+      "bid_median": 8.0,
+      "avg_impressions": 6055.397125567322,
+      "avg_orders": 0.4062027231467474,
+      "avg_ctr": 0.034019286430848866,
+      "avg_cvr": 0.00864238823952888
+    },
+    "NL_BROAD": {
+      "country": "NL",
+      "match_type": "BROAD",
+      "n_records": 137,
+      "n_bins": 5,
+      "bid_range": [
+        0.13,
+        1.59
+      ],
+      "bid_median": 0.33,
+      "avg_impressions": 1665.3430656934306,
+      "avg_orders": 0.17518248175182483,
+      "avg_ctr": 0.01649348835890983,
+      "avg_cvr": 0.02390905327204864
+    },
+    "UK_BROAD": {
+      "country": "UK",
+      "match_type": "BROAD",
+      "n_records": 16080,
+      "n_bins": 9,
+      "bid_range": [
+        0.02,
+        5.45
+      ],
+      "bid_median": 0.24,
+      "avg_impressions": 2989.0769278606967,
+      "avg_orders": 1.337686567164179,
+      "avg_ctr": 0.02172606154711973,
+      "avg_cvr": 0.0519297844581004
+    },
+    "UK_EXACT": {
+      "country": "UK",
+      "match_type": "EXACT",
+      "n_records": 8695,
+      "n_bins": 9,
+      "bid_range": [
+        0.03,
+        3.15
+      ],
+      "bid_median": 0.24,
+      "avg_impressions": 2431.0558941920644,
+      "avg_orders": 1.0553191489361702,
+      "avg_ctr": 0.02579090160159675,
+      "avg_cvr": 0.048953003654517185
+    },
+    "UK_PHRASE": {
+      "country": "UK",
+      "match_type": "PHRASE",
+      "n_records": 8884,
+      "n_bins": 8,
+      "bid_range": [
+        0.02,
+        2.18
+      ],
+      "bid_median": 0.24,
+      "avg_impressions": 3399.825754164791,
+      "avg_orders": 1.4027465105808195,
+      "avg_ctr": 0.028443714784132962,
+      "avg_cvr": 0.05306257290254801
+    },
+    "US_BROAD": {
+      "country": "US",
+      "match_type": "BROAD",
+      "n_records": 113627,
+      "n_bins": 20,
+      "bid_range": [
+        0.02,
+        29.0
+      ],
+      "bid_median": 0.65,
+      "avg_impressions": 6448.823519057971,
+      "avg_orders": 3.311440062661163,
+      "avg_ctr": 0.02008633082871437,
+      "avg_cvr": 0.05446094787873921
+    },
+    "US_EXACT": {
+      "country": "US",
+      "match_type": "EXACT",
+      "n_records": 55236,
+      "n_bins": 20,
+      "bid_range": [
+        0.02,
+        28.37
+      ],
+      "bid_median": 0.75,
+      "avg_impressions": 4379.893909768991,
+      "avg_orders": 2.3803135636179302,
+      "avg_ctr": 0.019144917650836535,
+      "avg_cvr": 0.05638906608208026
+    },
+    "US_PHRASE": {
+      "country": "US",
+      "match_type": "PHRASE",
+      "n_records": 43574,
+      "n_bins": 20,
+      "bid_range": [
+        0.02,
+        20.0
+      ],
+      "bid_median": 0.6,
+      "avg_impressions": 5948.849681002433,
+      "avg_orders": 3.682333501629412,
+      "avg_ctr": 0.025423831852232702,
+      "avg_cvr": 0.06112019208118079
+    }
+  },
+  "optimal_bids": {
+    "AU_BROAD": {
+      "country": "AU",
+      "match_type": "BROAD",
+      "n_records": 1423,
+      "current_median_bid": 0.4,
+      "bid_range": [
+        0.2,
+        1.0
+      ],
+      "sweet_spot_bid": 0.7326315789473684,
+      "diminishing_returns_bid": 0.4488118811881188,
+      "recommended_range": [
+        0.5762857142857142,
+        0.49453488372093024
+      ],
+      "efficiency_at_sweet_spot": 17634.027777777777
+    },
+    "AU_EXACT": {
+      "country": "AU",
+      "match_type": "EXACT",
+      "n_records": 2807,
+      "current_median_bid": 0.5,
+      "bid_range": [
+        0.4,
+        1.06
+      ],
+      "sweet_spot_bid": 0.5488311688311689,
+      "diminishing_returns_bid": 0.5488311688311689,
+      "recommended_range": [
+        0.47520853540252184,
+        0.5997282608695652
+      ],
+      "efficiency_at_sweet_spot": 6116.575563730925
+    },
+    "AU_PHRASE": {
+      "country": "AU",
+      "match_type": "PHRASE",
+      "n_records": 477,
+      "current_median_bid": 0.5,
+      "bid_range": [
+        0.39,
+        0.74
+      ],
+      "sweet_spot_bid": 0.4492682926829269,
+      "diminishing_returns_bid": 0.6391666666666667,
+      "recommended_range": [
+        0.4492682926829269,
+        0.6391666666666667
+      ],
+      "efficiency_at_sweet_spot": 5487.202379416416
+    },
+    "CA_BROAD": {
+      "country": "CA",
+      "match_type": "BROAD",
+      "n_records": 28489,
+      "current_median_bid": 0.55,
+      "bid_range": [
+        0.05,
+        2.2
+      ],
+      "sweet_spot_bid": 0.29355991590749825,
+      "diminishing_returns_bid": 0.3975583090379009,
+      "recommended_range": [
+        0.29355991590749825,
+        0.41
+      ],
+      "efficiency_at_sweet_spot": 30215.281147055328
+    },
+    "CA_EXACT": {
+      "country": "CA",
+      "match_type": "EXACT",
+      "n_records": 40541,
+      "current_median_bid": 0.7,
+      "bid_range": [
+        0.14,
+        6.0
+      ],
+      "sweet_spot_bid": 0.3397612359550562,
+      "diminishing_returns_bid": 0.4574918566775244,
+      "recommended_range": [
+        0.3397612359550562,
+        0.5350323732976111
+      ],
+      "efficiency_at_sweet_spot": 12837.411940012624
+    },
+    "CA_PHRASE": {
+      "country": "CA",
+      "match_type": "PHRASE",
+      "n_records": 14382,
+      "current_median_bid": 0.65,
+      "bid_range": [
+        0.12,
+        4.0
+      ],
+      "sweet_spot_bid": 0.28902872777017785,
+      "diminishing_returns_bid": 0.4738208616780046,
+      "recommended_range": [
+        0.28902872777017785,
+        0.5994039735099338
+      ],
+      "efficiency_at_sweet_spot": 27182.648126385782
+    },
+    "DE_BROAD": {
+      "country": "DE",
+      "match_type": "BROAD",
+      "n_records": 22530,
+      "current_median_bid": 0.26,
+      "bid_range": [
+        0.02,
+        3.54
+      ],
+      "sweet_spot_bid": 0.18469006721433906,
+      "diminishing_returns_bid": 0.18469006721433906,
+      "recommended_range": [
+        0.10178571428571428,
+        0.22881141045958794
+      ],
+      "efficiency_at_sweet_spot": 27900.90590766565
+    },
+    "DE_EXACT": {
+      "country": "DE",
+      "match_type": "EXACT",
+      "n_records": 14349,
+      "current_median_bid": 0.26,
+      "bid_range": [
+        0.04,
+        2.98
+      ],
+      "sweet_spot_bid": 0.15326259946949602,
+      "diminishing_returns_bid": 0.22896333754740833,
+      "recommended_range": [
+        0.15326259946949602,
+        0.25
+      ],
+      "efficiency_at_sweet_spot": 21242.26247471807
+    },
+    "DE_PHRASE": {
+      "country": "DE",
+      "match_type": "PHRASE",
+      "n_records": 13143,
+      "current_median_bid": 0.26,
+      "bid_range": [
+        0.02,
+        4.02
+      ],
+      "sweet_spot_bid": 0.07571860816944025,
+      "diminishing_returns_bid": 0.2116248153618907,
+      "recommended_range": [
+        0.07571860816944025,
+        0.25951901417781903
+      ],
+      "efficiency_at_sweet_spot": 66259.3638141787
+    },
+    "ES_BROAD": {
+      "country": "ES",
+      "match_type": "BROAD",
+      "n_records": 15142,
+      "current_median_bid": 0.21,
+      "bid_range": [
+        0.02,
+        2.55
+      ],
+      "sweet_spot_bid": 0.14741808650065533,
+      "diminishing_returns_bid": 0.14741808650065533,
+      "recommended_range": [
+        0.1186842105263158,
+        0.1971257651641625
+      ],
+      "efficiency_at_sweet_spot": 25666.33909041422
+    },
+    "ES_EXACT": {
+      "country": "ES",
+      "match_type": "EXACT",
+      "n_records": 9122,
+      "current_median_bid": 0.21,
+      "bid_range": [
+        0.02,
+        3.25
+      ],
+      "sweet_spot_bid": 0.13808,
+      "diminishing_returns_bid": 0.19673645320197045,
+      "recommended_range": [
+        0.13808,
+        0.21
+      ],
+      "efficiency_at_sweet_spot": 19391.5849086112
+    },
+    "ES_PHRASE": {
+      "country": "ES",
+      "match_type": "PHRASE",
+      "n_records": 8244,
+      "current_median_bid": 0.21,
+      "bid_range": [
+        0.02,
+        1.58
+      ],
+      "sweet_spot_bid": 0.12501193317422435,
+      "diminishing_returns_bid": 0.19704533876719307,
+      "recommended_range": [
+        0.12501193317422435,
+        0.21
+      ],
+      "efficiency_at_sweet_spot": 33755.29533864633
+    },
+    "FR_BROAD": {
+      "country": "FR",
+      "match_type": "BROAD",
+      "n_records": 20040,
+      "current_median_bid": 0.25,
+      "bid_range": [
+        0.03,
+        3.51
+      ],
+      "sweet_spot_bid": 0.26,
+      "diminishing_returns_bid": 0.18937383177570094,
+      "recommended_range": [
+        0.25,
+        0.2232843137254902
+      ],
+      "efficiency_at_sweet_spot": 39315.21955285606
+    },
+    "FR_EXACT": {
+      "country": "FR",
+      "match_type": "EXACT",
+      "n_records": 12588,
+      "current_median_bid": 0.25,
+      "bid_range": [
+        0.02,
+        5.29
+      ],
+      "sweet_spot_bid": 0.2731457431457432,
+      "diminishing_returns_bid": 0.2358554663372452,
+      "recommended_range": [
+        0.25,
+        0.25
+      ],
+      "efficiency_at_sweet_spot": 16855.18300073203
+    },
+    "FR_PHRASE": {
+      "country": "FR",
+      "match_type": "PHRASE",
+      "n_records": 10717,
+      "current_median_bid": 0.25,
+      "bid_range": [
+        0.03,
+        1.46
+      ],
+      "sweet_spot_bid": 0.15390784982935155,
+      "diminishing_returns_bid": 0.23620352250489238,
+      "recommended_range": [
+        0.15390784982935155,
+        0.25
+      ],
+      "efficiency_at_sweet_spot": 31899.32029443
+    },
+    "IT_BROAD": {
+      "country": "IT",
+      "match_type": "BROAD",
+      "n_records": 16027,
+      "current_median_bid": 0.21,
+      "bid_range": [
+        0.02,
+        2.08
+      ],
+      "sweet_spot_bid": 0.13873372781065088,
+      "diminishing_returns_bid": 0.13873372781065088,
+      "recommended_range": [
+        0.09978813559322035,
+        0.17066844919786095
+      ],
+      "efficiency_at_sweet_spot": 37211.32454477986
+    },
+    "IT_EXACT": {
+      "country": "IT",
+      "match_type": "EXACT",
+      "n_records": 10252,
+      "current_median_bid": 0.21,
+      "bid_range": [
+        0.03,
+        3.21
+      ],
+      "sweet_spot_bid": 0.13166936790923825,
+      "diminishing_returns_bid": 0.17460526315789474,
+      "recommended_range": [
+        0.13166936790923825,
+        0.1976331877729258
+      ],
+      "efficiency_at_sweet_spot": 25766.93645453748
+    },
+    "IT_PHRASE": {
+      "country": "IT",
+      "match_type": "PHRASE",
+      "n_records": 9533,
+      "current_median_bid": 0.21,
+      "bid_range": [
+        0.03,
+        3.08
+      ],
+      "sweet_spot_bid": 0.11265720081135902,
+      "diminishing_returns_bid": 0.17178423236514523,
+      "recommended_range": [
+        0.11265720081135902,
+        0.20887711864406777
+      ],
+      "efficiency_at_sweet_spot": 49464.13447492459
+    },
+    "MX_BROAD": {
+      "country": "MX",
+      "match_type": "BROAD",
+      "n_records": 255,
+      "current_median_bid": 4.0,
+      "bid_range": [
+        0.12,
+        8.77
+      ],
+      "sweet_spot_bid": 3.557657142857143,
+      "diminishing_returns_bid": 7.083055555555556,
+      "recommended_range": [
+        3.557657142857143,
+        7.083055555555556
+      ],
+      "efficiency_at_sweet_spot": 1139.9701248012336
+    },
+    "MX_EXACT": {
+      "country": "MX",
+      "match_type": "EXACT",
+      "n_records": 1677,
+      "current_median_bid": 8.0,
+      "bid_range": [
+        0.75,
+        15.0
+      ],
+      "sweet_spot_bid": 2.399642857142857,
+      "diminishing_returns_bid": 4.834729064039409,
+      "recommended_range": [
+        2.399642857142857,
+        6.0285714285714285
+      ],
+      "efficiency_at_sweet_spot": 1051.604901523044
+    },
+    "MX_PHRASE": {
+      "country": "MX",
+      "match_type": "PHRASE",
+      "n_records": 1322,
+      "current_median_bid": 8.0,
+      "bid_range": [
+        0.75,
+        12.0
+      ],
+      "sweet_spot_bid": 2.01,
+      "diminishing_returns_bid": 4.197307692307692,
+      "recommended_range": [
+        2.01,
+        4.983560606060607
+      ],
+      "efficiency_at_sweet_spot": 3094.0543521731465
+    },
+    "NL_BROAD": {
+      "country": "NL",
+      "match_type": "BROAD",
+      "n_records": 137,
+      "current_median_bid": 0.33,
+      "bid_range": [
+        0.13,
+        1.59
+      ],
+      "sweet_spot_bid": 0.285,
+      "diminishing_returns_bid": 0.285,
+      "recommended_range": [
+        0.22736842105263158,
+        0.3404761904761905
+      ],
+      "efficiency_at_sweet_spot": 5999.791144527987
+    },
+    "UK_BROAD": {
+      "country": "UK",
+      "match_type": "BROAD",
+      "n_records": 16080,
+      "current_median_bid": 0.24,
+      "bid_range": [
+        0.02,
+        5.45
+      ],
+      "sweet_spot_bid": 0.1852514619883041,
+      "diminishing_returns_bid": 0.1852514619883041,
+      "recommended_range": [
+        0.11952238805970149,
+        0.22763132137030997
+      ],
+      "efficiency_at_sweet_spot": 22665.890744928944
+    },
+    "UK_EXACT": {
+      "country": "UK",
+      "match_type": "EXACT",
+      "n_records": 8695,
+      "current_median_bid": 0.24,
+      "bid_range": [
+        0.03,
+        3.15
+      ],
+      "sweet_spot_bid": 0.17297391304347828,
+      "diminishing_returns_bid": 0.21842892768079802,
+      "recommended_range": [
+        0.17297391304347828,
+        0.23
+      ],
+      "efficiency_at_sweet_spot": 16788.162874624144
+    },
+    "UK_PHRASE": {
+      "country": "UK",
+      "match_type": "PHRASE",
+      "n_records": 8884,
+      "current_median_bid": 0.24,
+      "bid_range": [
+        0.02,
+        2.18
+      ],
+      "sweet_spot_bid": 0.16140929535232384,
+      "diminishing_returns_bid": 0.21801916932907348,
+      "recommended_range": [
+        0.16140929535232384,
+        0.23
+      ],
+      "efficiency_at_sweet_spot": 29550.103317296835
+    },
+    "US_BROAD": {
+      "country": "US",
+      "match_type": "BROAD",
+      "n_records": 113627,
+      "current_median_bid": 0.65,
+      "bid_range": [
+        0.02,
+        29.0
+      ],
+      "sweet_spot_bid": 0.11071369704961266,
+      "diminishing_returns_bid": 0.20255330683050235,
+      "recommended_range": [
+        0.11071369704961266,
+        0.28014208389715833
+      ],
+      "efficiency_at_sweet_spot": 38358.54250409409
+    },
+    "US_EXACT": {
+      "country": "US",
+      "match_type": "EXACT",
+      "n_records": 55236,
+      "current_median_bid": 0.75,
+      "bid_range": [
+        0.02,
+        28.37
+      ],
+      "sweet_spot_bid": 0.22226512617816965,
+      "diminishing_returns_bid": 2.759426291793313,
+      "recommended_range": [
+        0.22226512617816965,
+        2.759426291793313
+      ],
+      "efficiency_at_sweet_spot": 20121.69043270988
+    },
+    "US_PHRASE": {
+      "country": "US",
+      "match_type": "PHRASE",
+      "n_records": 43574,
+      "current_median_bid": 0.6,
+      "bid_range": [
+        0.02,
+        20.0
+      ],
+      "sweet_spot_bid": 0.1604592968007602,
+      "diminishing_returns_bid": 0.24116043119847813,
+      "recommended_range": [
+        0.1604592968007602,
+        0.28761172685019665
+      ],
+      "efficiency_at_sweet_spot": 21959.650196419054
+    }
+  },
+  "action_distribution": {
+    "decrease": 341302,
+    "maintain": 126450,
+    "increase": 31541
+  }
+}

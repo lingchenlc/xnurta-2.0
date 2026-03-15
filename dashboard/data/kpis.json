@@ -1,0 +1,16 @@
+{
+  "total_spend": 2862799.1299999985,
+  "total_sales": 28782224.789999988,
+  "total_orders": 257465,
+  "total_clicks": 5237526,
+  "total_impressions": 630576562,
+  "avg_acos": 9.94641363163365,
+  "avg_roas": 10.053875065275713,
+  "n_campaigns": 157701,
+  "n_countries": 10,
+  "n_stores": 41,
+  "date_min": "2026-01-13",
+  "date_max": "2026-03-13",
+  "n_days": 60,
+  "n_rows": 8868808
+}

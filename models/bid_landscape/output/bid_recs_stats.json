@@ -1,0 +1,9 @@
+{
+  "total_recommendations": 499293,
+  "action_distribution": {
+    "decrease": 341302,
+    "maintain": 126450,
+    "increase": 31541
+  },
+  "avg_bid_change": -0.2040986174142192
+}
